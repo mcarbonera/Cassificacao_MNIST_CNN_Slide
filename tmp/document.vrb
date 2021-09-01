@@ -1,0 +1,26 @@
+\begin{exampleblock}{Doxygen - Exemplo}
+		Ferramenta para geração de documentação de forma automatizada.
+	\scriptsize
+		\begin{lstlisting}
+			/*! \fn int Inicializa_NMEAInfo(GNSS_Struct *S,NMEA_Info *I)
+			 * \brief Função de inicialização.
+			 *
+			 * O ponteiro GNSS_Info deve ser direcionado a uma struct do tipo
+			 * NMEA_Info que será usada durante toda a execução.
+ 			 * Ao atribuir a GNSS_flag valor 0, qualquer possível lixo de
+ 			 * memória é lógicamente descartado.
+			 *
+			 * \param *S é uma struct do tipo GNSS_Struct que possui um
+			 * ponteiro para struct GNSS_Infor (struct NMEA_Info) e um
+			 * campo inteiro GNSS_Flag.
+			 *
+			 * \param *I é uma struct NMEA_Info, cujo endereço de memória
+			 * deve ser atribuido a S->GNSS_Info.
+			 * \return um inteiro informando sucesso na operação (valor 1).
+			 */
+			 int Inicializa_NMEAInfo(GNSS_Struct *S,NMEA_Info *I)
+			 {
+			 	...
+			 }
+		\end{lstlisting}
+	\end{exampleblock}
